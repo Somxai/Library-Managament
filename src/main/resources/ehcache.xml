@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <config xmlns="http://www.ehcache.org/v3" >
+
+
+    <cache alias="Hibernate.HibernateMc.domain.book" uses-template="book"/>
+        <cache-template name="book">
+            <expiry>
+                <ttl>3600</ttl>
+            </expiry>
+            <heap>1000</heap>
+        </cache-template>
+
+    <cache alias="Hibernate.HibernateMc.domain.author" uses-template="author"/>
+    <cache-template name="author">
+        <expiry>
+            <ttl>3600</ttl>
+        </expiry>
+        <heap>1000</heap>
+    </cache-template>
+
+
+    <cache alias="Hibernate.HibernateMc.domain.borrow" uses-template="borrow"/>
+    <cache-template name="borrow">
+        <expiry>
+            <ttl>3600</ttl>
+        </expiry>
+        <heap>1000</heap>
+    </cache-template>
+
+
+    <cache alias="Hibernate.HibernateMc.domain.lateReturn" uses-template="lateReturn"/>
+    <cache-template name="lateReturn">
+        <expiry>
+            <ttl>3600</ttl>
+        </expiry>
+        <heap>1000</heap>
+    </cache-template>
+
+
+    <cache alias="Hibernate.HibernateMc.domain.student" uses-template="student"/>
+    <cache-template name="student">
+        <expiry>
+            <ttl>3600</ttl>
+        </expiry>
+        <heap>1000</heap>
+    </cache-template>
+
+
+
+
+
+
+
+</config>
+
+
+
+
+
+
